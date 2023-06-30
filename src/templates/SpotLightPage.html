@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CanZone SpotLight</title>
+    <link rel="stylesheet" href="../static/NavBar.css">
+    <link rel="stylesheet" href="../static/SpotLightPage.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="NavBar">
+        <div class="CanZoneText hoverLinkAnimation"><a href="HomePage.html" target="_self">CanZone</a></div>
+        <div class="hoverLinkAnimation" id="SearchText">
+            <a href="SearchPage.html" target="_self">Search</a>
+        </div>
+        <div class="hoverLinkAnimation" id="PlaylistText">
+            <a href="PlayList.html" target="_self">Playlist</a>
+        </div>
+        <div class="hoverLinkAnimation" id="ArtistsText"><a href="artistspage.html" target="_self">Artists</a>
+        </div>
+        <div class="hoverLinkAnimation" id="SpotlightArtistText"><a href="SpotLightPage.html"
+                target="_self">SpotLight</a></div>
+        <div class="hoverLinkAnimation" id="AboutText"><a href="About.html" target="_self">About</a>
+        </div>
+    </div>
+
+    <div class="gif-container" style=" margin-top: 107px;">
+        <img src="https://j.gifs.com/484vEV@large.gif?download=true" alt="Your Gif">
+        <div class="text-container">
+            <h1 style="font-size: 250px;font-family: Arial, Helvetica, sans-serif;">Justin Beiber</h1>
+        </div>
+    </div>
+
+    <div class="container_img">
+        <div class="left-columntophits">
+            <p><b>Upcoming release</b></p>
+        </div>
+        <div class="right-column">
+            <p id="countdown"></p>
+        </div>
+    </div>
+
+    <div class="flex-container" style="margin-top: 20px; height: 700px; ">
+        <div class="flex-item">
+            <a style="text-decoration: none; color: white" href="ALBjbChanges.html" target="_self">
+                <p class="text-container1" style="font-size: 60px;">CHANGES<br>(2020)</p>
+            </a>
+        </div>
+        <div class="flex-item">
+            <a style="text-decoration: none; color: white" href="ALBjbPurpose.html" target="_self">
+                <p class="text-container1" style="font-size: 60px;">PURPOSE<br>(2015)</p>
+            </a>
+        </div>
+        <div class="flex-item">
+            <a style="text-decoration: none; color: white" href="ALBjbJustice.html" target="_self">
+                <p class="text-container1" style="font-size: 60px;">JUSTICE<br>(2021)</p>
+            </a>
+        </div>
+        <div class="flex-item">
+            <a style="text-decoration: none; color: white" href="ALBjbMyWorld.html" target="_self">
+                <p class="text-container1" style="font-size: 65px;color: white;">MY<br>WORLD<br>(2014)</p>
+            </a>
+        </div>
+        <div class="flex-item">
+            <a style="text-decoration: none; color: white" href="ALBjbBelieve.html" target="_self">
+                <p class="text-container1" style="font-size: 60px;">BELIEVE<br>(2012)</p>
+            </a>
+        </div>
+    </div>
+
+    <main>
+        <section id="intro">
+            <h1 style="font-size: 50px;">About JB</h1>
+            <p style="font-size: 25px;">
+                Justin Bieber is a Canadian singer, songwriter, and actor. He was discovered on YouTube in 2008 by
+                talent manager Scooter Braun, and signed to RBMG Records in 2009.
+            </p>
+        </section>
+
+        <section id="discography">
+            <h1 style="font-size: 50px;">Discography</h1>
+            <ul id="DISCOGRAPHYlistvalues">
+                <li>My World 2.0 (2010)</li>
+                <li>Believe (2012)</li>
+                <li>Purpose (2015)</li>
+                <li>Changes (2020)</li>
+            </ul>
+        </section>
+
+        <section id="awards">
+            <h1 style="font-size: 50px;">Awards</h1>
+            <ul id="AWARDSlistvalues">
+                <li>Grammy Award for Best Dance Recording (2016)</li>
+                <li>American Music Award for Artist of the Year (2010, 2012, 2015)</li>
+                <li>MTV Europe Music Award for Best Male (2015)</li>
+            </ul>
+        </section>
+
+        <section id="reviews">
+            <h1 style="font-size: 50px;">Reviews</h1>
+            <form>
+                <label for="username">
+                    Name:
+                </label>
+                <input type="text" id="username" name="username"
+                    style="font-size: 21px ;height: 20px; width: 250px;"><br><br><br><br>
+                <label for="rating">Rating:</label><br><br>
+                <input type="radio" id="star5" name="rating" value="5"><label for="star5">5 Stars</label><br>
+                <input type="radio" id="star4" name="rating" value="4"><label for="star4">4 Stars</label><br>
+                <input type="radio" id="star3" name="rating" value="3"><label for="star3">3 Stars</label><br>
+                <input type="radio" id="star2" name="rating" value="2"><label for="star2">2 Stars</label><br>
+                <input type="radio" id="star1" name="rating" value="1"><label for="star1">1
+                    Star</label><br><br><br><br>
+                <label for="review">Review:</label><br><br>
+                <textarea id="review" name="review"
+                    style="font-size: 20px; height: 100px; width: 400px;"></textarea><br><br><br>
+                <input type="submit" value="Submit" style="height: 40px; width: 100px;">
+                <br><br><br>
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Rating</th>
+                        <th>Review</th>
+                    </tr>
+                </thead>
+                <tbody id="reviewTableBody">
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="../static/SpotLightPage.js"></script>
+</body>
+
+<footer class="footer">
+    <a style="text-decoration: none; color: greenyellow" href="About.html" target="_self">&copy; 2023 CanZone -
+        D_TanX</a>
+</footer>
+
+</html>

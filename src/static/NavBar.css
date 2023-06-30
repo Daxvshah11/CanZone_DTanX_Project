@@ -1,0 +1,129 @@
+.NavBar {
+    background-color: black;
+    height: 15%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+    z-index: 999;
+}
+
+.CanZoneText {
+    color: #fdd035;
+    text-align: left;
+    justify-content: center;
+    font-family: 'Satisfy', cursive;
+    font-style: italic;
+    top: 0px;
+    font-size: 100px;
+    font-style: strong;
+    float: left;
+}
+
+#SearchText {
+    position: relative;
+    font-family: 'Nunito', sans-serif;
+    top: 30px;
+    left: 250px;
+    font-size: 52px;
+    float: left;
+}
+
+#PlaylistText {
+    position: relative;
+    font-family: 'Nunito', sans-serif;
+    top: 30px;
+    left: 350px;
+    font-size: 52px;
+    float: left;
+}
+
+#ArtistsText {
+    position: relative;
+    font-family: 'Nunito', sans-serif;
+    top: 30px;
+    left: 450px;
+    font-size: 52px;
+    float: left;
+}
+
+#SpotlightArtistText {
+    position: relative;
+    font-family: 'Nunito', sans-serif;
+    top: 30px;
+    left: 550px;
+    font-size: 52px;
+    float: left;
+}
+
+#AboutText {
+    position: relative;
+    font-family: 'Nunito', sans-serif;
+    top: 30px;
+    left: 650px;
+    font-size: 52px;
+    float: left;
+}
+
+a:link {
+    color: #fdd035;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #fdd035;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #35fdd2;
+    text-decoration: none;
+}
+
+a:active {
+    color: #fdd035;
+    text-decoration: none;
+}
+
+.hoverLinkAnimation {
+    display: inline-block;
+    position: relative;
+    color: #35fdd2;
+}
+
+.hoverLinkAnimation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 5px;
+    left: 0;
+    background-color: #35fdd2;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-in-out;
+}
+
+.hoverLinkAnimation:hover::after {
+    transform: scaleX(0.75);
+    transform-origin: bottom left;
+}
+
+
+
+
+
+/* NOT NAVBAR ,,,,, ONLY FOR TOGGLE PLUS BUTTON  */
+
+.toggle-btn {
+    font-size: 30px;
+    color: white;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.toggle-btn:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+
+<head>
+  <title>&divide; (Deluxe)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="HomePage.css">
+  <link rel="stylesheet" href="../static/NavBar.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap" rel="stylesheet">
+  <style>
+    /*
+
+
+
+
+
+
+
+
+
+
+*/
+    .container {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(3, 88, 109)), url("https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81oMqLRXxML._SL1420_.jpg");
+      background-size: 200% auto, cover;
+      background-position: right center, center center;
+      background-repeat: no-repeat;
+      height: 500px;
+      margin-top: 120px;
+    }
+
+
+    .flex-container {
+      display: flex;
+      flex-wrap: stretch;
+
+      height: 800px;
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: bold;
+      /* height: 800px; */
+      background-color: #f1f1f1;
+    }
+
+    .flex-item {
+      color: #f1f1f1;
+      font-size: 400px;
+      width: 200px;
+      flex-grow: 1;
+      /* padding: 20px; */
+      /* margin: 10px; */
+      /* border-radius: 20px; */
+      word-break: break-word;
+      text-align: center;
+      height: 800px;
+
+      font-size: 30px;
+      transition: flex-grow 0.5s;
+    }
+
+    .flex-item:hover {
+      flex-grow: 2;
+      filter: brightness(80%);
+      transition: 0.5s;
+
+    }
+
+    .flex-item:hover:after {
+      filter: brightness(100%);
+
+    }
+
+    .flex-item:nth-child(1) {
+
+      background-image: url("https://www.edsheeran.com/sites/g/files/g2000015851/files/2022-04/ES_EQUALS_v5_0.jpg");
+      background-size: cover;
+      background-position: center;
+
+    }
+
+
+
+    .flex-item:nth-child(2) {
+      background-image: url("https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/713MsE+fMKL._SL1200_.jpg");
+      background-size: cover;
+      background-position: center;
+
+    }
+
+    .flex-item:nth-child(3) {
+      background-image: url("https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81oMqLRXxML._SL1420_.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .flex-item:nth-child(4) {
+      background-image: url("http://cdn.shopify.com/s/files/1/0730/1451/products/91fu9fd9fyl._sl1425_1024x1024.jpg?v=1571438920");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .flex-item:nth-child(5) {
+      background-image: url("https://is5-ssl.mzstatic.com/image/thumb/Music/4c/73/32/mzi.ljjciyxf.jpg/1200x1200bf-60.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+
+    .flex-item:hover .text-container1 {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+
+    .text-container1 {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      padding: 0;
+      margin: 0;
+      transform: translate(-50%, 20%);
+      opacity: 0;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .text-container1 p {
+
+      color: white;
+    }
+
+
+
+
+    .top_artist {
+
+      margin-top: 200px;
+      padding: 150px;
+      font-size: 200px;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    .gif-container {
+      position: relative;
+      display: inline-block;
+      /* filter: brightness(80%); */
+    }
+
+    .gif-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+      filter: brightness(80%);
+    }
+
+    .text-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+
+    }
+
+    .text-container h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      filter: brightness(120%);
+    }
+
+
+
+    .left-columntophits {
+      width: 60%;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 100px;
+      margin-top: 75px;
+      width: 650px;
+      padding-left: 30px;
+      font-style: bold;
+      line-height: 85px;
+      float: left;
+      color: rgb(179, 214, 222);
+      position: absolute;
+      /* added */
+      top: 170px;
+      /* added */
+      left: 20px;
+      /* added */
+      /* width: 100px; */
+    }
+
+    .left-column {
+      width: 60%;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 125px;
+      font-style: bold;
+      float: left;
+      position: absolute;
+      /* added */
+      top: 320px;
+      /* added */
+      color: rgb(179, 214, 222);
+      left: 20px;
+      /* added */
+      margin-left: 30px;
+      /* width: 100px; */
+    }
+
+
+    .right-column {
+      width: 50%;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      height: 200px;
+      margin-left: 100px;
+      float: right;
+      color: rgb(179, 214, 222);
+      padding: 20px;
+      padding-right: 80px;
+      width: 550px;
+    }
+
+    .album-container {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    .album-list {
+      list-style-type: none;
+      margin: 0;
+      padding: 10px;
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .album-list li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      transition: opacity 0.2s ease-in-out;
+      /* Add a transition effect */
+      border-radius: 10px;
+      z-index: 999;
+    }
+
+    .album-list li:hover {
+      /* Set the opacity of the list item to 0.7 when hovering */
+      background-color: rgb(9, 137, 169);
+      transition: 0.2s;
+    }
+
+    .album-list li:last-child {
+      border-bottom: none;
+    }
+
+    .album-list li span:first-child {
+      font-weight: bold;
+      font-size: 24px;
+      margin-right: 20px;
+    }
+
+    .album-list li span:nth-child(2) {
+      font-weight: normal;
+      font-size: 18px;
+    }
+
+    .album-list li span:last-child {
+      font-weight: normal;
+      font-size: 16px;
+    }
+
+    .album-title {
+      font-weight: bold;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .album-year {
+      font-size: 24px;
+      margin-right: 20px;
+    }
+
+    .right-column img {
+      height: 450px;
+      width: 450px;
+      object-fit: cover;
+      margin-right: 30px;
+    }
+
+    .footer {
+      width: 100%;
+      height: 50px;
+      position: relative;
+      top: 130px;
+      bottom: 0px;
+      background-color: grey;
+      text-align: center;
+      font-size: 40px;
+      color: rgb(103, 255, 57);
+      z-index: 999;
+    }
+  </style>
+</head>
+
+<body style="background-color: rgb(3, 88, 109);">
+  <div class="NavBar">
+    <div class="CanZoneText hoverLinkAnimation"><a href="HomePage.html" target="_self">CanZone</a></div>
+    <div class="hoverLinkAnimation" id="SearchText">
+      <a href="SearchPage.html" target="_self">Search</a>
+    </div>
+    <div class="hoverLinkAnimation" id="PlaylistText">
+      <a href="PlayList.html" target="_self">Playlist</a>
+    </div>
+    <div class="hoverLinkAnimation" id="ArtistsText"><a href="artistspage.html" target="_self">Artists</a>
+    </div>
+    <div class="hoverLinkAnimation" id="SpotlightArtistText"><a href="SpotLightPage.html" target="_self">SpotLight</a>
+    </div>
+    <div class="hoverLinkAnimation" id="AboutText"><a href="About.html" target="_self">About</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="left-columntophits">
+      <p><b>Ed Sheeran</b></p>
+    </div>
+    <div class="left-column">
+      <p><b>÷ (Deluxe)</b></p>
+    </div>
+    <div class="right-column">
+      <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81oMqLRXxML._SL1420_.jpg">
+
+    </div>
+  </div>
+
+  </div>
+
+  <div class="album-container" style="margin-top: 20px;color: white;font-family: arial;">
+
+    <ul class="album-list">
+      <li>
+        <span>Castle On The Hill</span>
+        <span>4:21&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<button class="toggle-btn">+</button></span>
+      </li>
+      <li>
+        <span>Shape Of You</span>
+        <span>3:53&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<button class="toggle-btn">+</button></span>
+      </li>
+      <li>
+        <span>Perfect</span>
+        <span>4:23&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<button class="toggle-btn">+</button></span>
+      </li>
+      <li>
+        <span>Galway Girl</span>
+        <span>2:50&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<button class="toggle-btn">+</button></span>
+      </li>
+      <li>
+        <span>New Man</span>
+        <span>3:09&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<button class="toggle-btn">+</button></span>
+      </li>
+      <li>
+        <span>Happier</span>
+        <span>3:27&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<button class="toggle-btn">+</button></span>
+      </li>
+      <li>
+        <span>Dive</span>
+        <span>3:58&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<button class="toggle-btn">+</button></span>
+      </li>
+    </ul>
+  </div>
+
+  <script src="../static/PlayList.js"></script>
+
+
+</body>
+
+<footer class="footer">
+  <a style="text-decoration: none; color: greenyellow" href="About.html" target="_self">&copy; 2023 CanZone -
+    D_TanX</a>
+</footer>
+
+
+</html>

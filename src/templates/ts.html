@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Taylor Swift</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="HomePage.css">
+  <link rel="stylesheet" href="../static/NavBar.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap" rel="stylesheet">
+  <style>
+    /*
+    
+    
+    
+    
+    
+    
+    
+    */
+    .ArtistBox {
+      height: 500px;
+      margin-top: 120px;
+      background-color: bisque;
+    }
+
+    .container {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #6f2b27), url("https://media.pitchfork.com/photos/6352cd4063dcacf1f2521078/3:2/w_1998,h_1332,c_limit/Taylor-Swift-Red.jpg");
+      background-size: 200% auto, cover;
+      background-position: right center, center center;
+      background-repeat: no-repeat;
+      height: 500px;
+      margin-top: 120px;
+    }
+
+
+
+    .flex-container {
+      display: flex;
+      flex-wrap: stretch;
+
+      height: 800px;
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: bold;
+      /* height: 800px; */
+      background-color: #f1f1f1;
+    }
+
+    .flex-item {
+      color: #f1f1f1;
+      font-size: 400px;
+      width: 200px;
+      flex-grow: 1;
+      /* padding: 20px; */
+      /* margin: 10px; */
+      /* border-radius: 20px; */
+      word-break: break-word;
+      text-align: center;
+      height: 800px;
+
+      font-size: 30px;
+      transition: flex-grow 0.5s;
+    }
+
+    .flex-item:hover {
+      flex-grow: 2.5;
+      filter: brightness(80%);
+      transition: 0.5s;
+
+    }
+
+    .flex-item:hover:after {
+      filter: brightness(100%);
+
+    }
+
+    .flex-item:nth-child(1) {
+
+      background-image: url("https://img.thetedellis.com/v7/thetedellis.com/wp-content/uploads/2022/08/222_29e5b83be83a3b96ae4266aad0854eb2_2000.jpg?org_if_sml=0");
+      background-size: cover;
+      background-position: center;
+
+    }
+
+
+
+    .flex-item:nth-child(2) {
+      background-image: url("https://static01.nyt.com/images/2020/12/10/arts/10taylor-item2/10taylor-item2-superJumbo.jpg");
+      background-size: cover;
+      background-position: center;
+
+    }
+
+    .flex-item:nth-child(3) {
+      background-image: url("https://pbs.twimg.com/media/E4LtA9ZXwAsgl1V.jpg:large");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .flex-item:nth-child(4) {
+      background-image: url("https://ichef.bbci.co.uk/news/976/cpsprodpb/10BBB/production/_113593586_swift.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .flex-item:nth-child(5) {
+      background-image: url("https://pbs.twimg.com/media/Fo8rEpSaIAAPpyo.jpg:large");
+      background-size: cover;
+      background-position: center;
+    }
+
+
+    .flex-item:hover .text-container1 {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+
+    .text-container1 {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      padding: 0;
+      margin: 0;
+      transform: translate(-50%, 20%);
+      opacity: 0;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .text-container1 p {
+
+      color: white;
+    }
+
+
+
+    .top_artist {
+
+      margin-top: 200px;
+      padding: 150px;
+      font-size: 200px;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    .gif-container {
+      position: relative;
+      display: inline-block;
+      /* filter: brightness(80%); */
+    }
+
+    .gif-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+      filter: brightness(80%);
+    }
+
+    .text-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+
+    }
+
+    .text-container h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      filter: brightness(120%);
+    }
+
+
+
+    .left-columntophits {
+      width: 60%;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 100px;
+      color: rgb(250, 235, 216, 0.8);
+      width: 650px;
+      padding-left: 10px;
+      font-style: bold;
+      line-height: 85px;
+      float: left;
+      position: absolute;
+      /* added */
+      top: 170px;
+      /* added */
+      left: 20px;
+      /* added */
+      /* width: 100px; */
+    }
+
+    .left-column {
+      width: 50%;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 130px;
+      font-style: bold;
+      float: left;
+      color: rgb(250, 235, 216);
+      position: absolute;
+      /* added */
+      top: 320px;
+      /* added */
+      left: 20px;
+      /* added */
+      /* width: 100px; */
+    }
+
+
+    .right-column {
+      width: 50%;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      float: right;
+      color: rgb(250, 235, 216, 0.8);
+      padding: 20px;
+      padding-right: 80px;
+      width: 550px;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+    }
+
+    .album-list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .album-list li {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      padding: 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      margin-top: 15px;
+    }
+
+    .album-list li:last-child {
+      border-bottom: none;
+    }
+
+    .album-list li span:first-child {
+      font-weight: bold;
+      font-size: 30px;
+    }
+
+    .album-list li span:last-child {
+      font-weight: normal;
+      font-size: 16px;
+      text-align: right;
+    }
+
+    .footer {
+      width: 100%;
+      height: 50px;
+      position: relative;
+      top: 130px;
+      bottom: 0px;
+      background-color: grey;
+      text-align: center;
+      font-size: 40px;
+      color: rgb(103, 255, 57);
+      z-index: 999;
+    }
+  </style>
+</head>
+
+<body style="background-color: #6f2b27;">
+  <div class="NavBar">
+    <div class="CanZoneText hoverLinkAnimation"><a href="HomePage.html" target="_self">CanZone</a></div>
+    <div class="hoverLinkAnimation" id="SearchText">
+      <a href="SearchPage.html" target="_self">Search</a>
+    </div>
+    <div class="hoverLinkAnimation" id="PlaylistText">
+      <a href="PlayList.html" target="_self">Playlist</a>
+    </div>
+    <div class="hoverLinkAnimation" id="ArtistsText"><a href="artistspage.html" target="_self">Artists</a>
+    </div>
+    <div class="hoverLinkAnimation" id="SpotlightArtistText"><a href="SpotLightPage.html" target="_self">SpotLight</a>
+    </div>
+    <div class="hoverLinkAnimation" id="AboutText"><a href="About.html" target="_self">About</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="left-columntophits">
+      <p><b>Top Albums <span style="font-size: 70px;">Ft.</span></b></p>
+    </div>
+    <div class="left-column">
+      <p><b>Taylor Swift</b></p>
+    </div>
+    <div class="right-column">
+      <ul class="album-list">
+        <li>
+          <span>Midnigths</span>
+          <span>10 Songs</span>
+        </li>
+        <li>
+          <span>Evermore</span>
+          <span>12 Songs</span>
+        </li>
+        <li>
+          <span>Red</span>
+          <span>8 Songs</span>
+        </li>
+        <li>
+          <span>Folklore</span>
+          <span>14 Songs</span>
+        </li>
+        <li>
+          <span>Lover</span>
+          <span>11 Songs</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  </div>
+
+  <div class="flex-container" style="margin-top: 20px; height: 700px; ">
+    <div class="flex-item">
+      <a style="text-decoration: none; color: white" href="ALBtsMidnights.html" target="_self">
+        <p class="text-container1" style="font-size: 50px;">MIDNIGHTS<br>(2022)</p>
+      </a>
+    </div>
+    <div class="flex-item">
+      <a style="text-decoration: none; color: white" href="ALBtsEvermore.html" target="_self">
+        <p class="text-container1" style="font-size: 50px;">EVERMORE<br>(2021)</p>
+      </a>
+    </div>
+    <div class="flex-item">
+      <a style="text-decoration: none; color: white" href="ALBtsRed.html" target="_self">
+        <p class="text-container1" style="font-size: 70px;">RED<br>(2021)</p>
+      </a>
+    </div>
+    <div class="flex-item">
+      <a style="text-decoration: none; color: white" href="ALBtsFolklore.html" target="_self">
+        <p class="text-container1" style="font-size: 55px;">FOLKLORE<br>(2020)</p>
+      </a>
+    </div>
+    <div class="flex-item">
+      <a style="text-decoration: none; color: white" href="ALBtsLover.html" target="_self">
+        <p class="text-container1" style="font-size: 70px;">LOVER<br>(2019)</p>
+      </a>
+    </div>
+
+  </div>
+  <script src="../static/PlayList.js"></script>
+
+</body>
+
+<footer class="footer">
+  <a style="text-decoration: none; color: greenyellow" href="About.html" target="_self">&copy; 2023 CanZone -
+    D_TanX</a>
+</footer>
+
+
+</html>

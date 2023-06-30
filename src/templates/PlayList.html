@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CanZone PlayList</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="HomePage.css">
+    <link rel="stylesheet" href="../static/NavBar.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap" rel="stylesheet">
+    <style>
+        .container_img {
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #082c73), url("https://d1e00ek4ebabms.cloudfront.net/production/64265296-d952-47a2-82f8-e1fb8c3bf58b.jpg");
+            background-size: 200% auto, cover;
+            background-position: right center, center center;
+            background-repeat: no-repeat;
+            height: 500px;
+            margin-top: 20px;
+          }
+          
+          .left-columntophits {
+          
+            width: 60%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 100px;
+            margin-top: 75px;
+            width: 650px;
+            padding-left: 30px;
+            font-style: bold;
+            line-height: 95px;
+            float: left;
+            color: white;
+            position: relative;
+            /* added */
+            top: 20px;
+            /* added */
+            left: 20px;
+            /* added */
+            /* width: 100px; */
+          }
+          
+          .left-column {
+            width: 60%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 125px;
+            font-style: bold;
+            float: left;
+            position: relative;
+            /* added */
+            top: 150px;
+            /* added */
+            color: white;
+            left: 20px;
+            /* added */
+            margin-left: 30px;
+            /* width: 100px; */
+          }
+          
+          
+          .right-column {
+            position: relative;
+            width: 50%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            height: 200px;
+            margin-left: 100px;
+            float: right;
+            color: rgb(179, 214, 222);
+            padding: 20px;
+            padding-right: 80px;
+            width: 550px;
+          }
+          
+          
+          .flex-container {
+            display: flex;
+            flex-wrap: stretch;
+            height: 800px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: bold;
+            background-color: #f1f1f1;
+          }
+          
+          .flex-item {
+            color: #f1f1f1;
+            font-size: 400px;
+            width: 200px;
+            flex-grow: 1;
+            /* padding: 20px; */
+            /* margin: 10px; */
+            /* border-radius: 20px; */
+            word-break: break-word;
+            text-align: center;
+            height: 800px;
+          
+            font-size: 30px;
+            transition: flex-grow 0.5s;
+          }
+          
+          .flex-item:hover {
+            flex-grow: 2;
+            filter: brightness(80%);
+            transition: 0.5s;
+          
+          }
+          
+          .flex-item:hover:after {
+            filter: brightness(100%);
+          
+          }
+          
+          .flex-item:nth-child(1) {
+          
+            background-image: url("https://i.pinimg.com/originals/37/ea/2f/37ea2f0ef8c0bc0fd680fd130c67465d.jpg");
+            background-size: cover;
+            background-position: center;
+          
+          }
+          
+          
+          
+          .flex-item:nth-child(2) {
+            background-image: url("https://files.oyebesmartest.com/uploads/large/justin-bieber-aesthetic-howkak.png");
+            background-size: cover;
+            background-position: center;
+          
+          }
+          
+          .flex-item:nth-child(3) {
+            background-image: url("https://i.pinimg.com/originals/4e/0f/6f/4e0f6f1ed43d15cb2894258f0aba643b.jpg");
+            background-size: cover;
+            background-position: center;
+          }
+          
+          .flex-item:nth-child(4) {
+            background-image: url("https://images.genius.com/1640fb3fbde41c646dec7d11f0aa64bb.999x999x1.png");
+            background-size: cover;
+            background-position: left;
+          }
+          
+          .flex-item:nth-child(5) {
+            background-image: url("https://wallpaperaccess.com/full/5437630.jpg");
+            background-size: cover;
+            background-position: center;
+          }
+          
+          
+          
+          
+          .flex-item:hover .text-container1 {
+            opacity: 1;
+            transform: translate(-50%, -50%);
+          }
+          
+          .text-container1 {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            padding: 0;
+            margin: 0;
+            transform: translate(-50%, 20%);
+            opacity: 0;
+            transition: all 0.5s ease-in-out;
+          }
+          
+          .text-container1 p {
+          
+            color: white;
+          }
+          
+          
+          .top_artist {
+          
+            margin-top: 200px;
+            padding: 150px;
+            font-size: 200px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+          
+          }
+          
+          .gif-container {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            height: 800px;
+            /* filter: brightness(80%); */
+          }
+          
+          .gif-container img {
+            width: 100%;
+            height: 800px;
+            display: block;
+          }
+          
+          .text-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+          
+          }
+          
+          .text-container h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            filter: brightness(120%);
+          }
+          
+          .footer {
+            width: 100%;
+            height: 50px;
+            position: relative;
+            top: 40px;
+            bottom: 0px;
+            background-color: grey;
+            text-align: center;
+            font-size: 40px;
+            color: rgb(103, 255, 57);
+            z-index: 999;
+          }
+          
+          #intro {
+            background-color: #eee;
+            padding: 50px;
+            text-align: center;
+          }
+          
+          /* Discography section styles */
+          
+          #discography {
+            background-color: #fff;
+            padding: 50px;
+            text-align: center;
+          }
+          
+          /* Awards section styles */
+          
+          #awards {
+            background-color: #eee;
+            padding: 50px;
+            text-align: center;
+          }
+          
+          main {
+            position: relative;
+          }
+          
+          #reviews {
+            background-color: #fff;
+            padding: 50px;
+            text-align: center;
+          }
+          
+          table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+          }
+          
+          th,
+          td {
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          }
+          
+          th {
+            font-size: 30px;
+            background-color: #eee;
+          }
+          
+          td {
+            font-size: 20px;
+            text-align: center;
+          }
+          
+          label {
+            font-size: 30px;
+            margin-right: 10px;
+          }
+          
+          #countdown {
+            margin-top: 200px;
+            justify-content: left;
+            font-size: 80px;
+            font-weight: bold;
+            color: whitesmoke;
+          }
+          
+          ul li {
+            text-align: left;
+            list-style-position: inside;
+          }
+          
+          #DISCOGRAPHYlistvalues {
+            margin-left: 510px;
+            font-size: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          }
+          
+          #AWARDSlistvalues {
+            margin-left: 300px;
+            font-size: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          }
+
+          table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            max-width: 80%;
+            margin-left: 10%;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #fc3d5b;
+    
+          }
+          
+          th, td {
+            padding: 10px 15px;
+            text-align: left;
+            border-bottom: 5px;
+          }
+          
+          th {
+            font-weight: bold;
+            font-size: 20px;
+          }
+          
+          td:first-child, td:nth-child(3) {
+            font-weight: bold;
+            font-size: 25px;
+            color: white;
+            width: 20%;
+ 
+
+          }
+
+          td:nth-child(2){
+            font-size: 25px;
+            color: white;
+
+          }
+
+          td:nth-child(4) {
+            color: rgb(232, 232, 232);
+          }
+          td:last-child {
+            width: 50px;
+          }
+          
+          td:last-child  {
+            border: none;
+
+            color: #fff;
+            font-size: 36px;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+          }
+            
+          tbody td:last-child {
+            text-align: center;
+            cursor: pointer;
+          }
+          
+          tbody td:last-child:hover {
+            background-color: rgba(255, 0, 0, 0.2);
+          }
+
+          .delete_button {
+            font-size: 30px;
+            color: white;
+            padding: 0;
+            border: none;
+            background-color: transparent;
+          }
+        
+          .delete_button:hover{
+            opacity: 0.7;
+            cursor: pointer;
+          }
+          
+    </style>
+</head>
+
+<body style="background-color: #fc3d5b;">
+    <div class="NavBar">
+        <div class="CanZoneText hoverLinkAnimation"><a href="HomePage.html" target="_self">CanZone</a></div>
+        <div class="hoverLinkAnimation" id="SearchText">
+            <a href="SearchPage.html" target="_self">Search</a>
+        </div>
+        <div class="hoverLinkAnimation" id="PlaylistText">
+            <a href="PlayList.html" target="_self">Playlist</a>
+        </div>
+        <div class="hoverLinkAnimation" id="ArtistsText"><a href="artistspage.html" target="_self">Artists</a>
+        </div>
+        <div class="hoverLinkAnimation" id="SpotlightArtistText"><a href="SpotLightPage.html"
+                target="_self">SpotLight</a></div>
+        <div class="hoverLinkAnimation" id="AboutText"><a href="About.html" target="_self">About</a>
+        </div>
+    </div>
+
+    <div class="gif-container" style=" margin-top: 107px;">
+        <img src="https://static.vecteezy.com/system/resources/previews/011/919/484/original/aesthetic-colorful-cute-red-pink-and-orange-gradient-wallpaper-illustration-perfect-for-wallpaper-backdrop-postcard-background-banner-vector.jpg" alt="Your Gif">
+        <div class="text-container">
+            <h1 style="font-size: 250px;font-family: Arial, Helvetica, sans-serif;">My PlayList</h1>
+        </div>
+    </div>
+
+    <table style="margin-bottom: 60px;margin-top: 60px ">
+      <tbody id="song-list">
+          <tr>
+
+          </tr>
+          {{ rows|safe }}
+      </tbody>
+  </table>
+
+
+  
+      
+  <script>
+    function deleteSong(songId) {
+        fetch('/delete_song', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({'songID': songId})
+        })
+        .then(response => {
+            if (response.ok) {
+                location.reload();  // Refresh the page to update the table
+            } else {
+                alert('Failed to delete song.');
+            }
+        })
+        .catch(error => {
+            console.error('Failed to delete song:', error);
+            alert('Failed to delete song.');
+        });
+    }
+    
+    // Attach click event listener to all delete buttons
+    const deleteButtons = document.querySelectorAll('.delete_button');
+    for (const button of deleteButtons) {
+        button.addEventListener('click', event => {
+            const songId = event.target.getAttribute('data-songid');
+            alert("Song Has Been Deleted");
+            deleteSong(songId);
+        });
+    }
+    </script>
+    
+
+</body>
+
+
+
+
+</html>

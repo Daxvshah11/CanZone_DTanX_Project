@@ -1,0 +1,380 @@
+.HomeMain {
+    background-color: lightgrey;
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    position: relative;
+}
+
+
+/* 
+
+
+
+
+
+
+
+
+
+
+*/
+
+.containerTopArtists {
+    display: flex;
+    position: relative;
+    top: 130px;
+    left: 0px;
+    margin-left: 0px;
+    height: 900px;
+    width: 100%;
+    transition: 200ms ease;
+}
+
+.TopArtistsImg {
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 200ms ease;
+}
+
+.TopArtistsImg:hover {
+    filter: blur(8px);
+}
+
+.TopArtistsTitle {
+    position: absolute;
+    color: rgb(39, 255, 39);
+    font-size: 110px;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.flexBoxNameArtists {
+    position: absolute;
+    color: black;
+    font-size: 70px;
+    top: 26%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    /* font-family: 'Delius Swash Caps', cursive; */
+    transition: opacity 0.5s ease-in-out;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.containerTopArtists:hover .TopArtistsTitle {
+    opacity: 1;
+}
+
+.flexBox {
+    position: absolute;
+    display: block;
+    opacity: 0;
+    height: 220px;
+    width: 100%;
+    background-color: rgb(56, 255, 145);
+    transition: 0.2s ease-in-out;
+    font-size: 70px;
+
+}
+
+#A1 {
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/696/424/1000/justin-bieber-photo-8k-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 30%;
+    top: 210px;
+    left: 0px;
+    justify-content: center;
+}
+
+#A2 {
+    background-image: url("https://images.hdqwalls.com/wallpapers/taylor-swift-2019-new-33.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 30%;
+    top: 440px;
+    left: 0px;
+    justify-content: center;
+}
+
+#A3 {
+    background-image: url("https://images6.alphacoders.com/782/782618.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 60%;
+    top: 670px;
+    left: 0px;
+    justify-content: center;
+}
+
+.containerTopArtists:hover #A1 {
+    opacity: 1;
+    transition: 0.4s ease-in-out;
+}
+
+.containerTopArtists:hover #A2 {
+    opacity: 1;
+    transition: 0.8s ease-in-out;
+}
+
+.containerTopArtists:hover #A3 {
+    opacity: 1;
+    transition: 1.2s ease-in-out;
+}
+
+
+/*
+
+
+
+
+
+
+
+
+
+*/
+
+.containerTopSongs {
+    display: flex;
+    position: relative;
+    top: 140px;
+    left: 0px;
+    margin-left: 0px;
+    height: 900px;
+    width: 100%;
+    transition: 200ms ease;
+}
+
+.TopSongsImg {
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 200ms ease;
+}
+
+.TopSongsImg:hover {
+    filter: blur(8px);
+}
+
+.TopSongsTitle {
+    position: absolute;
+    color: whitesmoke;
+    font-size: 110px;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.flexBoxNameSongs {
+    position: absolute;
+    font-size: 70px;
+    top: 25%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.containerTopSongs:hover .TopSongsTitle {
+    opacity: 1;
+}
+
+#S1 {
+    background-image: url("https://www.wallpapertip.com/wmimgs/38-384370_justin-bieber-stage-2017.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 20%;
+    color: white;
+    top: 210px;
+    left: 0px;
+    justify-content: center;
+}
+
+#S2 {
+    background-image: url("https://www.naijaprey.com/wp-content/uploads/2021/09/Jalebi-Baby-Video.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 18%;
+    color: white;
+    top: 440px;
+    left: 0px;
+    justify-content: center;
+}
+
+#S3 {
+    background-image: url("https://www.udiscovermusic.com/wp-content/uploads/2020/01/Weeknd-Blinding-Lights.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 40%;
+    color: white;
+    top: 670px;
+    left: 0px;
+    justify-content: center;
+}
+
+.containerTopSongs:hover #S1 {
+    opacity: 1;
+    transition: 0.4s ease-in-out;
+}
+
+.containerTopSongs:hover #S2 {
+    opacity: 1;
+    transition: 0.8s ease-in-out;
+}
+
+.containerTopSongs:hover #S3 {
+    opacity: 1;
+    transition: 1.2s ease-in-out;
+}
+
+/*
+
+
+
+
+
+
+
+
+
+*/
+
+
+
+.containerTopHits {
+    display: flex;
+    position: relative;
+    top: 150px;
+    left: 0px;
+    margin-left: 0px;
+    height: 900px;
+    width: 100%;
+    transition: 200ms ease;
+}
+
+.TopHitsImg {
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 200ms ease;
+}
+
+.TopHitsImg:hover {
+    filter: blur(8px);
+}
+
+.TopHitsTitle {
+    position: absolute;
+    color: whitesmoke;
+    font-size: 110px;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.flexBoxNameAlbums {
+    position: absolute;
+    font-size: 70px;
+    top: 27%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.containerTopHits:hover .TopHitsTitle {
+    opacity: 1;
+}
+
+#H1 {
+    background-image: url("https://media.pitchfork.com/photos/6058ad261f9ee7d62be45061/1:1/w_1500,h_1500,c_limit/Justin%20Bieber:%20Justice.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 25%;
+    color: white;
+    top: 210px;
+    left: 0px;
+    justify-content: center;
+}
+
+#H2 {
+    background-image: url("https://linkstorage.linkfire.com/medialinks/images/7262305f-c7b7-433c-b0f7-a8c5af658eab/artwork-600x315.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 50%;
+    color: white;
+    top: 440px;
+    left: 0px;
+    justify-content: center;
+}
+
+#H3 {
+    background-image: url("https://i.pinimg.com/736x/6a/eb/db/6aebdb93dea43efddf359aa3ac23b475.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 20%;
+    color: white;
+    top: 670px;
+    left: 0px;
+    justify-content: center;
+}
+
+.containerTopHits:hover #H1 {
+    opacity: 1;
+    transition: 0.4s ease-in-out;
+}
+
+.containerTopHits:hover #H2 {
+    opacity: 1;
+    transition: 0.8s ease-in-out;
+}
+
+.containerTopHits:hover #H3 {
+    opacity: 1;
+    transition: 1.2s ease-in-out;
+}
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+.footer {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    top: 150px;
+    bottom: 0px;
+    background-color: grey;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(103, 255, 57);
+    z-index: 999;
+}

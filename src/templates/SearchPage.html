@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CanZone Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../static/SearchPage.css">
+    <link rel="stylesheet" href="HomePage.css">
+    <link rel="stylesheet" href="../static/NavBar.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="NavBar">
+        <div class="CanZoneText hoverLinkAnimation"><a href="HomePage.html" target="_self">CanZone</a></div>
+        <div class="hoverLinkAnimation" id="SearchText">
+            <a href="SearchPage.html" target="_self">Search</a>
+        </div>
+        <div class="hoverLinkAnimation" id="PlaylistText">
+            <a href="PlayList.html" target="_self">Playlist</a>
+        </div>
+        <div class="hoverLinkAnimation" id="ArtistsText"><a href="artistspage.html" target="_self">Artists</a>
+        </div>
+        <div class="hoverLinkAnimation" id="SpotlightArtistText"><a href="SpotLightPage.html"
+                target="_self">SpotLight</a></div>
+        <div class="hoverLinkAnimation" id="AboutText"><a href="About.html" target="_self">About</a>
+        </div>
+    </div>
+
+    <div id="typing"></div>
+
+    <div id="search-container">
+        <input type="text" id="search-bar" placeholder="Search..." style="font-size: 30px;">
+        <div id="toggle-container">
+            <label class="switch">
+                <input type="checkbox" id="toggle-explicit">
+                <span class="slider round"></span>
+            </label>
+            <span id="toggle-label" style="font-size: 35px; font-weight: bold; font-style: italic;">E (Explicit)</span>
+        </div>
+    </div>
+
+    <div id="duration-container">
+        <input type="number" id="max-duration-input" placeholder="Max duration (in mins)"
+            style="font-size: 20px; width: 250px;">
+    </div><br><br><br><br><br>
+
+    <div style="text-align: center;">
+        <button id="clear-filters-button" style="font-size: 20px;">Clear All Filters</button>
+    </div>
+
+    <div id="results-container"></div>
+
+    <script src="../static/SearchPage.js"></script>
+</body>
+
+</html>
